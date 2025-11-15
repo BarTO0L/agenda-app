@@ -57,19 +57,20 @@
 - **Week Overview:** This allows users to see at a glance which weeks have planned tasks and which are empty.  
 
 
-### File Structure                                                           License
+###   File Structure                                                          
                                                               
-agenda-app/                  
-│                                                       - This project is licensed under the MIT License.
-├─ index.html                                      
-├─ css/                        
-│   └─ style.css                    
-└─ js/                          
-    ├─ project.js              
-    ├─ ui.js                  
-    ├─ storage.js              
-    └─ app.js                
+  agenda-app/                  
+  │                                                       
+  ├─ index.html                                      
+  ├─ css/                        
+  │   └─ style.css                    
+  └─ js/                          
+      ├─ project.js              
+      ├─ ui.js                  
+      ├─ storage.js              
+      └─ app.js                
 
 
-    
+###                                       License
 
+#                      - This project is licensed under the MIT License.
