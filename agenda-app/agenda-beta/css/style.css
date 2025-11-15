@@ -1,0 +1,116 @@
+body {
+    background-color: #5892ea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5892ea;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#dateForm {
+    display: flex;
+    gap: 10px;
+}
+
+#datePicker {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 12px rgba(185, 149, 4, 0.521);
+}
+
+.card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fefefe;
+    transition: background-color 0.2s;
+}
+
+.task-item:hover {
+    background-color: #f0f0f0;
+}
+
+.task-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+.note-container {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: #555;
+    word-wrap: break-word;
+}
+
+.task-buttons {
+    display: flex;
+    flex-direction: initial;
+    gap: 1px;
+    margin-left: 8px;
+}
+
+.task-buttons button {
+    font-size: 10px;
+    padding: 1px 1px;
+    border-radius: 1px;
+    transition: transform 0.1s;
+}
+
+.task-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.cards-wrapper {
+    min-height: 50px;
+}
+
+@media (max-width: 768px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-buttons {
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 5px;
+        gap: 5px;
+    }
+}
